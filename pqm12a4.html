@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giới thiệu bản thân - Phạm Quang Minh</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: #2c7be5;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        /* ===== SUB NAV ===== */
+        .sub-nav {
+            display: flex;
+            justify-content: center;
+            background: #e9eef5;
+        }
+
+        .sub-nav button {
+            border: none;
+            background: none;
+            padding: 14px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .sub-nav button:hover {
+            background: #d0ddf5;
+        }
+
+        /* ===== TAB CONTENT ===== */
+        .tab {
+            display: none;
+            padding: 30px;
+            animation: fade 0.6s;
+        }
+
+        @keyframes fade {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        /* ===== PROFILE ===== */
+        .profile {
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .profile img {
+            width: 190px;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 3px solid #2c7be5;
+        }
+
+        .info h2 {
+            margin-top: 0;
+            color: #2c7be5;
+        }
+
+        .info p {
+            margin: 6px 0;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        /* ===== UNIVERSITY ===== */
+        .uni {
+            background: #fff8e6;
+        }
+
+        .uni h2, .uni h3 {
+            color: #9c4221;
+        }
+
+        a {
+            color: #2c7be5;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== CREDIT ===== */
+        .credit {
+            margin-top: 40px;
+            padding: 12px;
+            background: #2c7be5;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <h1>Giới thiệu bản thân</h1>
+    <p>Xin chào, tôi là <b>Phạm Quang Minh - lớp 12A4</b>!  
+    Hy vọng bạn đọc thích website giới thiệu về bản thân tôi 😊</p>
+</header>
+
+<!-- ===== SUB NAV ===== -->
+<div class="sub-nav">
+    <button onclick="openTab('me')">👤 Phạm Quang Minh</button>
+    <button onclick="openTab('uni')">🏥 Đại học Y Hà Nội</button>
+</div>
+
+<!-- ===== TAB 1: ABOUT ME ===== -->
+<div id="me" class="tab" style="display:block;">
+    <div class="profile">
+        <img src="your-image.jpg" alt="Ảnh đại diện">
+        <div class="info">
+            <h2>👋 Thông tin cá nhân</h2>
+            <p>📛 <b>Họ và tên:</b> Phạm Quang Minh</p>
+            <p>🎂 <b>Sinh nhật:</b> 13/09/2008</p>
+            <p>🏫 <b>Lớp / Trường:</b> 12A4 – THPT Hòn Gai</p>
+            <p>📚 <b>Tổ hợp học tập:</b> Toán – Hóa – Sinh</p>
+            <p>🧠 <b>Tính cách:</b> Hiền lành, ôn hòa, có chút cầu toàn và khắt khe với công việc, dễ thay đổi bởi ngoại cảnh (trừ một số trường hợp).</p>
+            <p>🎬 <b>Sở thích:</b> Ở nhà, đọc sách, xem phim</p>
+            <p>💭 <b>Quan điểm sống:</b> Sống sao cho bản thân thấy thoải mái và không có lỗi với ai</p>
+        </div>
+    </div>
+
+    <h3>⭐ Học tập & thành tích</h3>
+    <p>📈 <b>Học lực:</b> Tốt</p>
+    <p>🧬 <b>Môn học nổi bật:</b> Sinh học</p>
+    <p>🏆 <b>Thành tích tiêu biểu:</b> Đạt giải nhì ở cuộc thi học sinh giỏi cấp tỉnh bộ môn Sinh học</p>
+
+    <h3>🛠 Kỹ năng</h3>
+    <ul>
+        <li>📖 <b>Kỹ năng học tập:</b> Tư duy logic, tự học, thuyết trình</li>
+        <li>💻 <b>Kỹ năng công nghệ:</b> HTML cơ bản, PowerPoint, tìm kiếm thông tin</li>
+        <li>🤝 <b>Kỹ năng mềm:</b> Làm việc nhóm, quản lý thời gian</li>
+    </ul>
+
+    <h3>🎯 Định hướng</h3>
+    <p>⏳ <b>Mục tiêu ngắn hạn:</b> Đỗ Đại học Y Hà Nội</p>
+    <p>🩺 <b>Định hướng nghề nghiệp:</b> Bác sĩ chuyên khoa xét nghiệm</p>
+</div>
+
+<!-- ===== TAB 2: UNIVERSITY ===== -->
+<div id="uni" class="tab uni">
+    <h2>🏥 Đại học Y Hà Nội</h2>
+
+    <p>
+        Ở phần mục này, mình sẽ giới thiệu về <b>trường đại học mà bản thân đang phấn đấu hướng tới</b> –  
+        <b>Trường Đại học Y Hà Nội</b>, một trong những cơ sở đào tạo y khoa hàng đầu tại Việt Nam.
+    </p>
+
+    <p>
+        👉 Bạn có thể tìm hiểu thêm thông tin chính thức về trường tại đây:  
+        <a href="https://hmu.edu.vn/" target="_blank">Website Trường Đại học Y Hà Nội</a>
+    </p>
+
+    <h3>📌 Lịch sử & vai trò</h3>
+    <p>
+        Trường có hơn 100 năm hình thành và phát triển, là nơi đào tạo ra nhiều thế hệ bác sĩ,
+        chuyên gia y tế đóng góp quan trọng cho ngành y tế Việt Nam.
+    </p>
+
+    <h3>🎓 Quy mô đào tạo</h3>
+    <p>
+        Hiện nay trường có khoảng 16.000 sinh viên và học viên ở các bậc đại học,
+        sau đại học và nghiên cứu sinh.
+    </p>
+
+    <h3>👨‍🏫 Đội ngũ & chương trình</h3>
+    <p>
+        Trường có hơn 3.000 cán bộ, giảng viên với nhiều giáo sư, phó giáo sư, tiến sĩ
+        cùng các chương trình đào tạo đa dạng và quốc tế hóa.
+    </p>
+
+    <h3>🏆 Thành tựu</h3>
+    <p>
+        Đại học Y Hà Nội được xếp hạng 801–1000 thế giới và là trường duy nhất của Việt Nam
+        được xếp hạng trong lĩnh vực khoa học sức khỏe năm 2025.
+    </p>
+</div>
+
+<!-- ===== CREDIT ===== -->
+<div class="credit">
+    <p>“Cảm ơn bạn đã ghé thăm website của tôi”</p>
+    <p>Phạm Quang Minh – 2025</p>
+</div>
+
+<script>
+    function openTab(tabId) {
+        let tabs = document.getElementsByClassName("tab");
+        for (let i = 0; i < tabs.length; i++) {
+            tabs[i].style.display = "none";
+        }
+        document.getElementById(tabId).style.display = "block";
+    }
+</script>
+
+</body>
+</html>
